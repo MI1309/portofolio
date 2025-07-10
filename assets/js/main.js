@@ -225,3 +225,10 @@
 function clearForm() {
   document.querySelector("form").reset();
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.innerWidth <= 576) {
+    const img = document.querySelector('.hero-img');
+    img.src = '/assets/img/pp-hp.png'; // Ganti dengan versi mobile
+  }  
+});

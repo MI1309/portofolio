@@ -1,0 +1,11 @@
+vendor js
+
+aos = animate on scroll
+bootsrtap
+glightbox for image and video
+imagesloaded for images while done
+isotope layout grid
+purecounter penghitung angka
+swiper membuat carousel
+typedjs teks seolah sedang mengetik
+waypoints tombol panah ketika sudah memasuki view
