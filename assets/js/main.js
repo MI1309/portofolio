@@ -222,9 +222,18 @@
 })();
 
 // forms function
-function clearForm() {
-  document.querySelector("form").reset();
-}
+  document.getElementById("contact-form").addEventListener("submit", function(e) {
+    e.preventDefault(); // mencegah reload halaman
+
+    emailjs.sendForm("service_c7rh7ub", "template_ary93t5", this)
+      .then(function(response) {
+        alert("Pesan berhasil dikirim!");
+        document.getElementById("contact-form").reset();
+      }, function(error) {
+        alert("Gagal mengirim pesan: " + error.text);
+      });
+  });
+
 
 document.addEventListener('DOMContentLoaded', function () {
   if (window.innerWidth <= 576) {
